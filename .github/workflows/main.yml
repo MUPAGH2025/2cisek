@@ -9,7 +9,8 @@ jobs:
         - run: sudo apt-get install texlive-xetex inkscape pandoc
         - run: pip install nbconvert ipykernel
         - run: python -m ipykernel install --user
-        - run: python -m nbconvert --to pdf --execute upwind2d.ipynb
+        - run: python -m nbconvert --to pdf --execute project.ipynb
         - uses: actions/upload-artifact@v4
           with:
-            path: anim.gif 
+            name: sprawozdanie-pdf
+            path: "*.pdf"
