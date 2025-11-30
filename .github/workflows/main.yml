@@ -5,11 +5,11 @@ jobs:
       runs-on: ubuntu-22.04
       steps:
         - uses: actions/checkout@v4
-        - run: pip install scipy pint open_atmos_jupyter_utils
+        - run: pip install scipy pint open_atmos_jupyter_utils PyMPDATA matplotlib numpy
         - run: sudo apt-get install texlive-xetex inkscape pandoc
         - run: pip install nbconvert ipykernel
-        - run: python -m ipykernel install --user
-        - run: python -m nbconvert --to pdf --execute project.ipynb
+        - run: python -m ipykernel install --user --name=python3
+        - run: jupyter nbconvert --to pdf --execute project.ipynb --ExecutePreprocessor.kernel_name=python3
         - uses: actions/upload-artifact@v4
           with:
             name: sprawozdanie-pdf
