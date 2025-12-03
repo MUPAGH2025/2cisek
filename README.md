@@ -1,1 +1,4 @@
-# 2cisek
+Celem projektu jest analiza naprężeń przydennych wywołanych przez fale powierzchniowe w zależności od amplitudy fali oraz szorstkości dna. Model wykorzystuje dwuwymiarowe równania
+**shallow-water** z uwzględnieniem tarcia o dno (tarcie ścinające). Symulacje wykonane zostały dla czterech różnych scenariuszy: dwa typy dna oraz dwie różne amplitudy fali wytwarzanej na jednym z brzegów. Dla jednego ze scenariuszy wykonano test zbieżności numerycznej, za motywacją tworzenia takich symulacji jest opis transportu osadów, erozji brzegowej oraz weryfikowanie struktur hydrotechnicznych w strefie przybrzeżnej.
+
+**Pytanie badawcze**: Jak amplituda fali powierzchniowej i typ dna (szorstkość Manninga) wpływają na maksymalne naprężenia przydenne w płytkiej wodzie? 
